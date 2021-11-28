@@ -10,21 +10,21 @@ class HasilActivity : AppCompatActivity() {
         setContentView(R.layout.activity_hasil)
 
         val nama = intent.getStringExtra("nama")
-        val email = intent.getStringExtra("email")
-        val handphone = intent.getStringExtra("handphone")
-        val tanggalLahir = intent.getStringExtra("tanggalLahir")
-        val jumlahMataKuliah = intent.getIntExtra("jumlahMataKuliah", 0)
+        val kode = intent.getStringExtra("kode")
+        val tanggal = intent.getStringExtra("tanggal")
+        val alamat = intent.getStringExtra("alamat")
+        val total = intent.getIntExtra("total", 0)
 
         val namaTextView = findViewById<TextView>(R.id.namaTextView)
-        val emailTextView = findViewById<TextView>(R.id.emailTextView)
-        val handphoneTextView = findViewById<TextView>(R.id.handphoneTextView)
-        val tanggalLahirTextView = findViewById<TextView>(R.id.tanggalLahirTextView)
-        val jumlahMataKuliahTextView = findViewById<TextView>(R.id.jumlahMataKuliahTextView)
+        val kodeTextView = findViewById<TextView>(R.id.kodeTextView)
+        val tanggalTextView = findViewById<TextView>(R.id.tanggalTextView)
+        val alamatTextView = findViewById<TextView>(R.id.alamatTextView)
+        val totalTextView = findViewById<TextView>(R.id.totalTextView)
 
         namaTextView.setText(nama)
-        emailTextView.setText(email)
-        handphoneTextView.setText(handphone)
-        tanggalLahirTextView.setText(tanggalLahir)
-        jumlahMataKuliahTextView.setText(jumlahMataKuliah.toString())
+        kodeTextView.setText(kode)
+        tanggalTextView.setText(tanggal)
+        alamatTextView.setText(alamat)
+        totalTextView.setText(total.toString())
     }
 }

@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/211_HadiAndroidi/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20625" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/211_HadiAndroidi/app/src/main/res/drawable/ic_baseline_cancel_24.xml" value="0.24114583333333334" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/211_HadiAndroidi/app/src/main/res/drawable/ic_baseline_save_24.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/211_HadiAndroidi/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20625" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/211_HadiAndroidi/app/src/main/res/layout/activity_hasil.xml" value="0.25" />
-        <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/211_HadiAndroidi/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/211_HadiAndroidi/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/WINDOWS/AndroidStudioProjects/211_HadiAndroidi/app/src/main/res/layout/activity_splash.xml" value="0.1947463768115942" />
       </map>
     </option>

@@ -5,83 +5,108 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
-android:padding="8dp"
+android:padding="10dp"
 tools:context=".MainActivity">
 
 
 <TextView
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Nama"
+    android:text="Nama Barang"
+    android:textColor="@color/black"
+    android:textSize="15dp"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:gravity="center_horizontal"
     />
 
 <EditText
     android:id="@+id/namaEditText"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Isi nama lengkap "
+    android:hint="Isi nama barang"
     android:inputType="textPersonName"
-    android:layout_marginBottom="8dp"
+    android:layout_marginBottom="10dp"
     />
 
 <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Email"
-/>
-
-<EditText
-    android:id="@+id/emailEditText"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Isi Email "
-    android:inputType="textEmailAddress"
-    android:layout_marginBottom="8dp"
+    android:text="Kode Barang"
+    android:textColor="@color/black"
+    android:textSize="15dp"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:gravity="center_horizontal"
+    />
+
+    <EditText
+        android:id="@+id/kodeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Isi kode barang"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Pengiriman"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/tanggalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Isi tanggal pengiriman (dd-MM-yyyy)"
+        android:inputType="date"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat Pengiriman"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+       />
+
+    <EditText
+    android:id="@+id/alamatEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Isi alamat pengiriman"
+    android:inputType="text"
+    android:layout_marginBottom="10dp"
     />
 
 <TextView
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Handphone"
+    android:text="Total Jumlah Barang"
+    android:textColor="@color/black"
+    android:textSize="15dp"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:gravity="center_horizontal"
     />
 
 <EditText
-    android:id="@+id/handphoneEditText"
+    android:id="@+id/totalEditText"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Isi Handphone"
-    android:inputType="phone"
-    android:layout_marginBottom="8dp"
-    />
-
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Tanggal Lahir"
-    />
-
-<EditText
-    android:id="@+id/tanggalLahirEditText"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Isi Tanggal Lahir (dd/MM/yyyy)"
-    android:inputType="date"
-    android:layout_marginBottom="8dp"
-    />
-
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Jumlah Mata Kuliah"
-    />
-
-<EditText
-    android:id="@+id/jumlahMataKuliahEditText"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Isi Jumlah Mata Kuliah"
+    android:hint="Isi total jumlah barang"
     android:inputType="number"
-    android:layout_marginBottom="8dp"
+    android:layout_marginBottom="10dp"
     />
 
     <LinearLayout
@@ -95,9 +120,9 @@ tools:context=".MainActivity">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Simpan"
-            android:backgroundTint="@color/success"
+            android:backgroundTint="@color/teal_700"
             android:drawableLeft="@drawable/ic_baseline_save_24"
-            android:layout_marginRight="8dp"
+            android:layout_marginRight="10dp"
             />
 
          <Button
@@ -105,7 +130,7 @@ tools:context=".MainActivity">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Batal"
-             android:backgroundTint="@color/danger"
+             android:backgroundTint="@color/purple_500"
              android:drawableLeft="@drawable/ic_baseline_cancel_24"
             />
 

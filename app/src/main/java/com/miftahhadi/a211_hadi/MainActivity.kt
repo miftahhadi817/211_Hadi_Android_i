@@ -16,26 +16,27 @@ class MainActivity : AppCompatActivity() {
         val batalButton = findViewById<Button>(R.id.batalButton)
 
         val namaEditText = findViewById<EditText>(R.id.namaEditText)
-        val emailEditText = findViewById<EditText>(R.id.emailEditText)
-        val handphoneEditText = findViewById<EditText>(R.id.handphoneEditText)
-        val tanggalLahirEditText = findViewById<EditText>(R.id.tanggalLahirEditText)
-        val jumlahMataKuliahEditText = findViewById<EditText>(R.id.jumlahMataKuliahEditText)
+        val kodeEditText = findViewById<EditText>(R.id.kodeEditText)
+        val tanggalEditText = findViewById<EditText>(R.id.tanggalEditText)
+        val alamatEditText = findViewById<EditText>(R.id.alamatEditText)
+        val totalEditText = findViewById<EditText>(R.id.totalEditText)
+
 
         simpanButton.setOnClickListener {
-            Toast.makeText(this,"Data Berhasil disimpan ",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Data Barang berhasil disimpan ",Toast.LENGTH_SHORT).show()
 
             val nama = namaEditText.text.toString()
-            val email = emailEditText.text.toString()
-            val handphone = handphoneEditText.text.toString()
-            val tanggalLahir = tanggalLahirEditText.text.toString()
-            val jumlahMataKuliah = jumlahMataKuliahEditText.text.toString().toInt()
+            val kode = kodeEditText.text.toString()
+            val tanggal = tanggalEditText.text.toString()
+            val alamat = alamatEditText.text.toString()
+            val total = totalEditText.text.toString().toInt()
 
             val intent = Intent(this,HasilActivity::class.java)
             intent.putExtra("nama", nama)
-            intent.putExtra("email", email)
-            intent.putExtra("handphone", handphone)
-            intent.putExtra("tanggalLahir", tanggalLahir)
-            intent.putExtra("jumlahMataKuliah", jumlahMataKuliah)
+            intent.putExtra("kode", kode)
+            intent.putExtra("tanggal", tanggal)
+            intent.putExtra("alamat", alamat)
+            intent.putExtra("total", total)
             startActivity(intent)
         }
 
