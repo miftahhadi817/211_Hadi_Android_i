@@ -46,6 +46,7 @@ tools:context=".MainActivity">
     />
 
 <EditText
+    android:id="@+id/handphoneEditText"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="Isi Handphone"
@@ -60,6 +61,7 @@ tools:context=".MainActivity">
     />
 
 <EditText
+    android:id="@+id/tanggalLahirEditText"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="Isi Tanggal Lahir (dd/MM/yyyy)"
@@ -74,6 +76,7 @@ tools:context=".MainActivity">
     />
 
 <EditText
+    android:id="@+id/jumlahMataKuliahEditText"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="Isi Jumlah Mata Kuliah"
@@ -94,7 +97,7 @@ tools:context=".MainActivity">
             android:text="Simpan"
             android:backgroundTint="@color/success"
             android:drawableLeft="@drawable/ic_baseline_save_24"
-            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             />
 
          <Button

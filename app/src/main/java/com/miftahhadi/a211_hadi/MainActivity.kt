@@ -1,5 +1,6 @@
 package com.miftahhadi.a211_hadi
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -16,9 +17,26 @@ class MainActivity : AppCompatActivity() {
 
         val namaEditText = findViewById<EditText>(R.id.namaEditText)
         val emailEditText = findViewById<EditText>(R.id.emailEditText)
+        val handphoneEditText = findViewById<EditText>(R.id.handphoneEditText)
+        val tanggalLahirEditText = findViewById<EditText>(R.id.tanggalLahirEditText)
+        val jumlahMataKuliahEditText = findViewById<EditText>(R.id.jumlahMataKuliahEditText)
 
         simpanButton.setOnClickListener {
-            Toast.makeText(this,"Hai ",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Data Berhasil disimpan ",Toast.LENGTH_SHORT).show()
+
+            val nama = namaEditText.text.toString()
+            val email = emailEditText.text.toString()
+            val handphone = handphoneEditText.text.toString()
+            val tanggalLahir = tanggalLahirEditText.text.toString()
+            val jumlahMataKuliah = jumlahMataKuliahEditText.text.toString().toInt()
+
+            val intent = Intent(this,HasilActivity::class.java)
+            intent.putExtra("nama", nama)
+            intent.putExtra("email", email)
+            intent.putExtra("handphone", handphone)
+            intent.putExtra("tanggalLahir", tanggalLahir)
+            intent.putExtra("jumlahMataKuliah", jumlahMataKuliah)
+            startActivity(intent)
         }
 
         batalButton.setOnClickListener {
